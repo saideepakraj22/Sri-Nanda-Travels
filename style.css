@@ -1746,3 +1746,30 @@ footer {
     }
 
 }
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    background: #25D366;
+    color: white;
+
+    padding: 12px 22px;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn i {
+    font-size: 20px;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    transform: translateY(-2px);
+}
