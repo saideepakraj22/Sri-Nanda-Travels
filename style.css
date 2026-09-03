@@ -750,6 +750,161 @@ select {
 
     font-weight: 800;
 }
+/* ================= DESTINATIONS ================= */
+
+.destinations {
+    padding: 90px 7%;
+    background: #f5f7fa;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.section-title span {
+    color: #f4b400;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    color: #003366;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.section-title p {
+    color: #666;
+}
+
+.city-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.city-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.city-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.13);
+}
+
+.city-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.city-heading h3 {
+    color: #003366;
+    font-size: 26px;
+    margin: 0;
+}
+
+.city-heading p {
+    color: #888;
+    margin-top: 5px;
+}
+
+.place-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.place {
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f1f1f1;
+}
+
+.place img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+    background: #e8e8e8;
+}
+
+.place:hover img {
+    transform: scale(1.06);
+}
+
+.place h4 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: #003366;
+    font-size: 14px;
+}
+
+.trip-btn {
+    display: block;
+    text-align: center;
+    background: #003366;
+    color: white;
+    padding: 13px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 22px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.trip-btn:hover {
+    background: #f4b400;
+    color: #111;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .city-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .destinations {
+        padding: 60px 4%;
+    }
+
+    .city-card {
+        padding: 15px;
+    }
+
+    .place-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .place img {
+        height: 125px;
+    }
+
+    .place h4 {
+        font-size: 12px;
+        padding: 8px 3px;
+    }
+}
 
 
 /* =========================================
