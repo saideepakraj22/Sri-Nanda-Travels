@@ -641,131 +641,166 @@ select {
     font-weight: 700;
 }
 /* =====================================================
-   PROFESSIONAL SERVICES SECTION
+   PROFESSIONAL INDIAN TRAVEL SERVICES
 ===================================================== */
 
 .services {
+
     padding: 100px 0;
-    background: #ffffff;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fafafa 100%
+        );
+
 }
 
 
 /* SECTION HEADING */
 
 .section-heading {
-    text-align: center;
-    max-width: 750px;
+
+    max-width: 800px;
+
     margin: 0 auto 55px;
+
+    text-align: center;
+
 }
 
+
 .section-label {
+
     display: block;
 
-    color: #c58a00;
+    color: #c68a00;
 
-    font-size: 13px;
+    font-size: 12px;
 
-    font-weight: 700;
+    font-weight: 800;
 
     letter-spacing: 4px;
 
     margin-bottom: 12px;
+
 }
 
+
 .section-heading h2 {
-    font-size: 45px;
 
     color: #10284a;
 
-    line-height: 1.2;
+    font-size: clamp(32px, 4vw, 48px);
+
+    font-weight: 800;
+
+    line-height: 1.15;
 
     margin-bottom: 15px;
 
-    font-weight: 800;
 }
+
 
 .section-heading h2 span {
-    color: #c58a00;
+
+    color: #bd7c00;
+
 }
 
+
 .heading-line {
-    width: 65px;
+
+    width: 70px;
+
     height: 4px;
 
-    background: #c58a00;
+    background: #c68a00;
+
+    border-radius: 10px;
 
     margin: 0 auto 20px;
 
-    border-radius: 10px;
 }
+
 
 .section-heading p {
+
     color: #667085;
 
-    font-size: 15px;
+    font-size: 14px;
 
     line-height: 1.8;
+
 }
 
 
-/* SERVICES GRID */
+/* =====================================================
+   GRID
+===================================================== */
 
 .services-grid {
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:
+        repeat(3, 1fr);
 
     gap: 28px;
 
 }
 
 
-/* SERVICE CARD */
+/* =====================================================
+   CARD
+===================================================== */
 
 .service-card {
 
-    background: #ffffff;
-
-    border: 1px solid #e7e9ed;
-
-    border-radius: 18px;
+    position: relative;
 
     overflow: hidden;
 
-    position: relative;
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    border: 1px solid #e5e7eb;
 
     transition:
-        transform 0.4s ease,
-        box-shadow 0.4s ease;
+        transform .4s ease,
+        box-shadow .4s ease;
 
 }
 
 
 .service-card:hover {
 
-    transform: translateY(-10px);
+    transform: translateY(-9px);
 
     box-shadow:
-        0 20px 45px rgba(16, 40, 74, 0.15);
+        0 25px 50px rgba(16,40,74,.15);
 
 }
 
 
-/* FEATURED CARD */
+/* POPULAR CARD */
 
 .featured-service {
 
-    border-top: 4px solid #c58a00;
+    border-top: 4px solid #c68a00;
 
 }
 
 
-/* IMAGE */
+/* =====================================================
+   IMAGE
+===================================================== */
 
 .service-image {
 
-    height: 225px;
+    height: 235px;
 
     position: relative;
 
@@ -782,19 +817,25 @@ select {
 
     object-fit: cover;
 
-    transition: transform 0.6s ease;
+    display: block;
+
+    transition:
+        transform .7s ease;
 
 }
 
 
-.service-card:hover .service-image img {
+.service-card:hover
+.service-image img {
 
-    transform: scale(1.1);
+    transform: scale(1.08);
 
 }
 
 
-/* IMAGE OVERLAY */
+/* =====================================================
+   DARK IMAGE OVERLAY
+===================================================== */
 
 .image-overlay {
 
@@ -805,47 +846,87 @@ select {
     background:
         linear-gradient(
             to top,
-            rgba(5, 20, 40, 0.65),
-            rgba(5, 20, 40, 0.05)
+            rgba(0,0,0,.72),
+            rgba(0,0,0,.08) 65%,
+            transparent
         );
 
 }
 
 
-/* BADGE */
+/* =====================================================
+   SERVICE BADGE
+===================================================== */
 
 .service-badge {
 
     position: absolute;
 
-    top: 15px;
+    top: 16px;
 
-    left: 15px;
-
-    background: #c58a00;
-
-    color: #ffffff;
+    left: 16px;
 
     padding: 7px 13px;
 
     border-radius: 20px;
 
-    font-size: 10px;
+    background: #c68a00;
 
-    font-weight: 700;
+    color: white;
+
+    font-size: 9px;
+
+    font-weight: 800;
 
     letter-spacing: 1px;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.2);
 
 }
 
 
-/* SERVICE CONTENT */
+/* =====================================================
+   IMAGE LOCATION LABEL
+===================================================== */
+
+.image-location {
+
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 17px;
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+.image-location i {
+
+    color: #f5bd32;
+
+    margin-right: 5px;
+
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
 
 .service-content {
 
-    padding: 28px 25px 25px;
+    padding: 26px 25px 28px;
 
     text-align: center;
 
@@ -860,7 +941,7 @@ select {
 
     font-weight: 700;
 
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 
 }
 
@@ -873,14 +954,16 @@ select {
 
     line-height: 1.8;
 
-    min-height: 48px;
+    min-height: 47px;
 
     margin-bottom: 20px;
 
 }
 
 
-/* ENQUIRE BUTTON */
+/* =====================================================
+   ENQUIRE NOW
+===================================================== */
 
 .service-content a {
 
@@ -888,24 +971,24 @@ select {
 
     align-items: center;
 
-    gap: 8px;
+    gap: 9px;
 
-    color: #a66e00;
+    color: #ae7200;
 
-    font-size: 13px;
+    font-size: 12px;
 
-    font-weight: 700;
+    font-weight: 800;
 
-    transition: 0.3s;
+    transition: .3s;
 
 }
 
 
 .service-content a i {
 
-    font-size: 11px;
+    font-size: 10px;
 
-    transition: 0.3s;
+    transition: .3s;
 
 }
 
@@ -925,25 +1008,37 @@ select {
 
 
 /* =====================================================
-   MOBILE
+   TABLET
 ===================================================== */
 
-@media (max-width: 900px) {
+@media(max-width: 1000px) {
 
     .services-grid {
 
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
 
     }
 
 }
 
 
-@media (max-width: 600px) {
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width: 650px) {
 
     .services {
 
         padding: 70px 0;
+
+    }
+
+
+    .section-heading {
+
+        margin-bottom: 38px;
 
     }
 
@@ -973,14 +1068,14 @@ select {
 
     .service-image {
 
-        height: 230px;
+        height: 240px;
 
     }
 
 
     .service-content {
 
-        padding: 25px 20px;
+        padding: 24px 20px 27px;
 
     }
 
