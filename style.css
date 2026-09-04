@@ -1455,6 +1455,252 @@ select {
 
     color: #111;
 }
+/* ================= OUR FLEET ================= */
+
+.fleet-section {
+    padding: 90px 5%;
+    background: #ffffff;
+}
+
+.fleet-container {
+    max-width: 1350px;
+    margin: auto;
+}
+
+
+/* ---------- HEADING ---------- */
+
+.fleet-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.fleet-label {
+    display: inline-block;
+    color: #d99a00;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.fleet-line {
+    width: 55px;
+    height: 3px;
+    background: #d99a00;
+    margin: 0 auto 22px;
+}
+
+.fleet-heading h2 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #061a38;
+}
+
+.fleet-heading h2 span {
+    color: #d99a00;
+}
+
+.fleet-heading p {
+    margin-top: 18px;
+    color: #666;
+    font-size: 18px;
+}
+
+
+/* ---------- GRID ---------- */
+
+.fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+
+/* ---------- CARD ---------- */
+
+.fleet-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.fleet-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ---------- POPULAR CARD ---------- */
+
+.fleet-card.popular {
+    border: 2px solid #d99a00;
+}
+
+
+/* ---------- POPULAR BADGE ---------- */
+
+.popular-badge {
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d99a00;
+    color: #111;
+    padding: 9px 25px;
+    border-radius: 0 0 20px 20px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    z-index: 5;
+}
+
+
+/* ---------- IMAGE ---------- */
+
+.fleet-image {
+    position: relative;
+    height: 245px;
+    margin: 25px 20px 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f2f2f2;
+}
+
+.fleet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.fleet-card:hover .fleet-image img {
+    transform: scale(1.06);
+}
+
+
+/* ---------- VEHICLE TAG ---------- */
+
+.vehicle-tag {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(3, 22, 48, 0.9);
+    color: #ffffff;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* ---------- CONTENT ---------- */
+
+.fleet-content {
+    text-align: center;
+    padding: 25px 22px 30px;
+}
+
+.fleet-content h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #061a38;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.small-line {
+    width: 48px;
+    height: 3px;
+    background: #d99a00;
+    margin: 14px auto 22px;
+}
+
+.fleet-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+    min-height: 78px;
+    margin-bottom: 22px;
+}
+
+
+/* ---------- BOOK BUTTON ---------- */
+
+.book-btn {
+    display: inline-block;
+    padding: 12px 27px;
+    background: #061a38;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #d99a00;
+    color: #061a38;
+    transform: translateY(-2px);
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1100px) {
+
+    .fleet-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .fleet-heading h2 {
+        font-size: 40px;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+    .fleet-section {
+        padding: 65px 20px;
+    }
+
+    .fleet-heading {
+        margin-bottom: 40px;
+    }
+
+    .fleet-heading h2 {
+        font-size: 32px;
+    }
+
+    .fleet-heading p {
+        font-size: 15px;
+    }
+
+    .fleet-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .fleet-image {
+        height: 230px;
+    }
+
+    .fleet-content p {
+        min-height: auto;
+    }
+}
 
 
 /* =========================================
