@@ -1726,7 +1726,179 @@ color: #111;
 
     font-size: 12px;
 }
+/* ================= WHY CHOOSE US ================= */
 
+.why {
+    padding: 90px 20px;
+    background: #063b70;
+    color: #ffffff;
+}
+
+
+/* Heading */
+
+.why .section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.why .section-heading p {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.why .section-heading h2 {
+    font-size: 42px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.why .section-heading h2 span {
+    color: #ffd21f;
+}
+
+.why .heading-line {
+    width: 70px;
+    height: 4px;
+    background: #ffd21f;
+    margin: 18px auto 0;
+}
+
+
+/* ================= WHY GRID ================= */
+
+.why-grid {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+
+/* ================= WHY CARD ================= */
+
+.why-card {
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    transition: all 0.3s ease;
+
+    overflow: hidden;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: #ffd21f;
+}
+
+
+/* ================= IMAGE ================= */
+
+.why-image {
+    width: 100%;
+
+    height: 180px;
+
+    overflow: hidden;
+
+    border-radius: 13px;
+
+    margin-bottom: 20px;
+
+    background: #ffffff;
+}
+
+.why-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+.why-card:hover .why-image img {
+    transform: scale(1.08);
+}
+
+
+/* ================= TEXT ================= */
+
+.why-card h3 {
+    font-size: 21px;
+
+    margin: 0 0 10px;
+
+    color: #ffffff;
+}
+
+.why-card p {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    margin: 0;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .why {
+        padding: 65px 15px;
+    }
+
+    .why .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .why-image {
+        height: 200px;
+    }
+
+}
 
 /* =========================================
    CTA
